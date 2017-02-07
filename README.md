@@ -1,6 +1,6 @@
 yii2-bootstrap-tree
 ===================
-Виджет основыный на [bootstrap-treeview](https://github.com/lesha724/yii2-tree-view)
+Виджет основыный на [bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview)
 
 Installation
 ------------
@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \lesha724\bootstraptree\AutoloadExample::widget(); ?>```
+<?= \lesha724\bootstraptree\TreeView::widget(); ?>```

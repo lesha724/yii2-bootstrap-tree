@@ -28,4 +28,21 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \lesha724\bootstraptree\TreeView::widget(); ?>```
+<?= \lesha724\bootstraptree\TreeView::widget([
+    'htmlOptions'=>[
+                'id'=>'treeview-tabs'
+    ],
+    'options'=>[
+        'data'=>$items,
+        'enableLinks'=>true,
+        'showTags'=>true,
+        'levels'=>3
+    ],
+    'events'=>[
+        'onNodeSelected'=>'function(event, data) {
+            // Your logic goes here
+            alert(data.href);
+        }'
+    ]
+]); ?>
+```

@@ -3,6 +3,7 @@
 namespace lesha724\bootstraptree;
 use yii\helpers\Html;
 use yii\helpers\Json;
+use yii\web\JsExpression;
 use yii\web\View;
 
 /**
@@ -19,6 +20,11 @@ class TreeView extends \yii\base\Widget
      * @var array additional options that can be passed to the constructor of the treeview js object.
      */
     public $options=[];
+
+    /**
+     * @var array additional options that can be passed to the constructor of the treeview js object.
+     */
+    public $events=[];
 
     protected $_id;
 
@@ -38,10 +44,24 @@ class TreeView extends \yii\base\Widget
         $view = $this->getView();
         TreeViewAsset::register($view);
 
-        $options=$this->options===[]?'{}' : Json::encode($this->options);
+        $options = $this->_getEventsOptions();
+        $options=$options===[]?'{}' : Json::encode($options);
         $view->registerJs('$("#' . $this->_id . '").treeview( ' .$options .')', View::POS_READY);
 
         return $this->_runWidget();
+    }
+
+    /**
+     * @return array the javascript options
+     */
+    protected function _getEventsOptions()
+    {
+        $options=$this->options;
+        foreach($this->events as $key=>$event)
+        {
+            $options[$key]=$_function = new JsExpression($event);
+        }
+        return $options;
     }
 
     /**

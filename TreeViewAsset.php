@@ -14,7 +14,8 @@ use yii\web\AssetBundle;
 class TreeViewAsset extends AssetBundle
 {
     public static $customCss = null;
-    public $sourcePath = '@vendor/lesha724/yii2-bootstrap-tree/assets/bootstrap-treeview';
+    public $sourcePath = '@bower/bootstrap-treeview/dist';
+
 
     public $css = [
         'bootstrap-treeview.min.css'
@@ -26,7 +27,7 @@ class TreeViewAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
+        'yii\bootstrap\BootstrapAsset',
     ];
 
     public function init()

@@ -1,6 +1,6 @@
 yii2-bootstrap-tree
 ===================
-Виджет основыный на [bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview)
+Виджет основfный на [bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview)
 
 Installation
 ------------

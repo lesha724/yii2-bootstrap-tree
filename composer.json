@@ -1,6 +1,6 @@
 {
     "name": "lesha724/yii2-bootstrap-tree",
-    "description": "Виджет основаный на bootstrap-treeview (https://github.com/lesha724/yii2-tree-view)",
+    "description": "Виджет основаный на bootstrap-treeview (https://github.com/jonmiles/bootstrap-treeview)",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","bootstrap","tree","widget","treeview"],
     "license": "MIT",

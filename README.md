@@ -28,13 +28,46 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
+
+<?php
+// Example of data. $items structure https://github.com/jonmiles/bootstrap-treeview#data-structure
+$items = [
+    [
+        'text' => 'Node 1'
+        'icon' => "glyphicon glyphicon-stop",
+        'selectedIcon' => "glyphicon glyphicon-stop",
+        'href' => "#node-1",
+        'selectable' => true,
+        'state' => [
+            'checked' => true,
+            'disabled' => true,
+            'expanded' => true,
+            'selected' => true
+        ],
+        'tags' => ['available'],
+        ...,
+        'nodes'=>
+        [
+            ...
+        ]
+    ],
+    [
+        'text' => 'Folder 2',
+        'nodes' => [
+            ['text' => 'Node 2.1'],
+            ['text' => 'Node 2.2']
+        ]
+    ]
+];
+?>
+
 <?= \lesha724\bootstraptree\TreeView::widget([
     'htmlOptions'=>[
                 'id'=>'treeview-tabs'
     ],
     'options'=>[
         //https://github.com/jonmiles/bootstrap-treeview#options
-        'data'=>$items, // $items structure https://github.com/jonmiles/bootstrap-treeview#data-structure
+        'data'=>$items,
         'enableLinks'=>true,
         'showTags'=>true,
         'levels'=>3

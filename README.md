@@ -1,6 +1,6 @@
 yii2-bootstrap-tree
 ===================
-Виджет основfный на [bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview)
+Widget for [bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview)
 
 Installation
 ------------
@@ -33,12 +33,14 @@ Once the extension is installed, simply use it in your code by  :
                 'id'=>'treeview-tabs'
     ],
     'options'=>[
-        'data'=>$items,
+        //https://github.com/jonmiles/bootstrap-treeview#options
+        'data'=>$items, // $items structure https://github.com/jonmiles/bootstrap-treeview#data-structure
         'enableLinks'=>true,
         'showTags'=>true,
         'levels'=>3
     ],
     'events'=>[
+        //https://github.com/jonmiles/bootstrap-treeview#events
         'onNodeSelected'=>'function(event, data) {
             // Your logic goes here
             alert(data.href);

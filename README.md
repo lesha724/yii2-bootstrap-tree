@@ -30,7 +30,7 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 
 <?php
-// Example of data. $items structure https://github.com/jonmiles/bootstrap-treeview#data-structure
+// Example of data. $items structure https://github.com/patternfly/patternfly-bootstrap-treeview#data-structure
 $items = [
     [
         'text' => 'Node 1'
@@ -67,7 +67,7 @@ $items = [
     ],
     'options'=>[
 		//https://github.com/patternfly/patternfly-bootstrap-treeview#options
-        'data'=>$items, // $items structure https://github.com/patternfly/patternfly-bootstrap-treeview#data-structure
+        'data'=>$items,
         'enableLinks'=>true,
         'showTags'=>true,
         'levels'=>3

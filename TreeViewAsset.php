@@ -14,7 +14,8 @@ use yii\web\AssetBundle;
 class TreeViewAsset extends AssetBundle
 {
     public static $customCss = null;
-    public $sourcePath = '@bower/bootstrap-treeview/dist';
+
+    public $sourcePath = '@bower/patternfly-bootstrap-treeview/dist';
 
 
     public $css = [

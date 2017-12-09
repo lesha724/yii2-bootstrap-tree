@@ -1,8 +1,9 @@
 {
     "name": "lesha724/yii2-bootstrap-tree",
-    "description": "Виджет основаный на bootstrap-treeview (https://github.com/jonmiles/bootstrap-treeview)",
+    "description": "Виджет основаный на bootstrap-treeview",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","bootstrap","tree","widget","treeview"],
+    "homepage": "https://github.com/lesha724/yii2-bootstrap-tree",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +13,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/bootstrap-treeview": "@dev"
+        "bower-asset/patternfly-bootstrap-treeview": "^2.1"
     },
     "autoload": {
         "psr-4": {

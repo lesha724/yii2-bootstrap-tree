@@ -81,3 +81,9 @@ $items = [
     ]
 ]); ?>
 ```
+
+Links
+-----
+* (items strucrure)[https://github.com/patternfly/patternfly-bootstrap-treeview#data-structure]
+* (widget options)[https://github.com/patternfly/patternfly-bootstrap-treeview#options]
+* (js events)[https://github.com/patternfly/patternfly-bootstrap-treeview#events]

@@ -13,9 +13,15 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-		"yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-bootstrap4": "*",
         "bower-asset/patternfly-bootstrap-treeview": "^2.1"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "lesha724\\bootstraptree\\": ""
